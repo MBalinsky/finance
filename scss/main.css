@@ -1,0 +1,265 @@
+@import '../libs/normilize.css';
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("../fonts/Inter-Italic.woff") format("woff"), url("../fonts/Inter-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  background-color: white;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+header ul {
+  display: flex;
+  gap: 47px;
+}
+header ul a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+}
+header ul .active-page {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #FAFAFA;
+}
+footer .footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 148px 0 89px 0;
+}
+footer .footer__logo-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer__copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+}
+footer .footer-information {
+  display: flex;
+  gap: 127px;
+}
+footer .nav-item + .nav-item {
+  padding-top: 24px;
+}
+footer .nav__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+}
+footer .footer__contacts-list {
+  max-width: 270px;
+}
+footer .footer__contacts-item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+}
+footer .footer__contacts-item + .footer__contacts-item {
+  padding-top: 24px;
+}
+footer .link-phone {
+  margin-left: 31px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  font-weight: 500;
+}
+footer .link-fax {
+  margin-left: 17px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  font-weight: 500;
+}
+footer .link-email {
+  margin-left: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  font-weight: 500;
+}
+footer address {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  padding-top: 24px;
+}
+
+.finance {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.finance .finance__wrapper {
+  padding-top: 255px;
+  padding-bottom: 148px;
+}
+.finance .finance__content {
+  background-color: #FFFFFF;
+  display: block;
+  max-width: 800px;
+  padding: 85px;
+}
+.finance .finance__content h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  font-size: 44px;
+  font-weight: 700;
+  padding-bottom: 48px;
+}
+.finance .finance__content span {
+  display: block;
+  max-width: 630px;
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+}
+
+.our-team {
+  position: relative;
+  overflow: hidden;
+}
+.our-team .our-team__content {
+  padding-top: 148px;
+}
+.our-team .patterns__top-left {
+  position: absolute;
+  top: -55px;
+  left: 0;
+}
+.our-team .patterns__top-right {
+  position: absolute;
+  top: -55px;
+  right: 0;
+}
+.our-team .our-team__item + .our-team__item {
+  margin-left: 20px;
+}
+.our-team .our-team__list {
+  display: flex;
+}
+.our-team h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 150%;
+  color: #0D2C54;
+  padding-bottom: 96px;
+}
+.our-team .person-photo {
+  width: 295px;
+  height: 274px;
+}
+.our-team h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 24px;
+}
+.our-team span {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0D2C54;
+  max-width: 210px;
+  padding-top: 24px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+.finance{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    .finance__wrapper{
+        padding-top: 255px;
+        padding-bottom: 148px;
+    }
+    .finance__content{
+        background-color: #FFFFFF;
+        display: block;
+        max-width: 800px;
+        padding: 85px;
+        h1{
+            @include standart-style;
+            font-size: 44px;
+            font-weight: 700;
+            padding-bottom: 48px;
+        }
+        span{
+            display: block;
+            max-width: 630px;
+            text-align: left;
+            @include standart-style;
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+.our-team {
+    position: relative;
+    overflow: hidden;
+.our-team__content{
+    padding-top: 148px;
+}
+
+.patterns__top-left{
+    position: absolute;
+    top: -55px;
+    left: 0;
+}
+
+.patterns__top-right{
+    position: absolute;
+    top: -55px;
+    right: 0;
+}
+    .our-team__item + .our-team__item{
+        margin-left: 20px;
+    }
+
+    .our-team__list{
+        display: flex
+    }
+
+    h2 {
+        @include standart-title;
+        padding-bottom: 96px;
+    }
+
+    .person-photo {
+        width: 295px;
+        height: 274px;
+    }
+
+    h3 {
+        @include standart-style;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 24px;
+    }
+
+    span {
+        display: block;
+        @include standart-style;
+        max-width: 210px;
+        padding-top: 24px;
+    }
+}
