@@ -1,0 +1,17 @@
+.reviews{
+    overflow: hidden;
+    position: relative;
+    h2{
+        @include standart-title;
+    }
+    .patterns__bottom-left{
+        position: absolute;
+        bottom: -73px;
+        left: 0;
+    }
+    .patterns__bottom-right{
+        position: absolute;
+        bottom: -73px;
+        right: 0;
+    }
+}

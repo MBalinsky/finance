@@ -212,12 +212,12 @@ footer address {
 }
 .our-team .patterns__top-left {
   position: absolute;
-  top: -55px;
+  top: -65px;
   left: 0;
 }
 .our-team .patterns__top-right {
   position: absolute;
-  top: -55px;
+  top: -65px;
   right: 0;
 }
 .our-team .our-team__item + .our-team__item {
@@ -260,6 +260,49 @@ footer address {
   color: #0D2C54;
   max-width: 210px;
   padding-top: 24px;
+}
+.our-team .our-team__item {
+  position: relative;
+  cursor: pointer;
+}
+.our-team .eclipse-circle {
+  position: absolute;
+  bottom: 145px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF8C00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.our-team .eclipse-circle div {
+  color: white;
+}
+
+.reviews {
+  overflow: hidden;
+  position: relative;
+}
+.reviews h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 150%;
+  color: #0D2C54;
+}
+.reviews .patterns__bottom-left {
+  position: absolute;
+  bottom: -73px;
+  left: 0;
+}
+.reviews .patterns__bottom-right {
+  position: absolute;
+  bottom: -73px;
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
