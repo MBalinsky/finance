@@ -1,0 +1,32 @@
+.our__business {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    .our__business__wrapper {
+        padding-top: 229px;
+        padding-bottom: 148px;
+    }
+
+    .our__business__content {
+        background-color: #FFFFFF;
+        display: block;
+        max-width: 820px;
+        padding: 85px;
+    }
+
+    h1 {
+        @include standart-title;
+        font-size: 44px;
+        font-weight: 700;
+        padding-bottom: 48px;
+    }
+
+    span {
+        display: block;
+        max-width: 656px;
+        text-align: left;
+        @include standart-style;
+    }
+}

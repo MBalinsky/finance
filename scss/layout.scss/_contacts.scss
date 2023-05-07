@@ -1,0 +1,78 @@
+.contacts{
+    padding: 152px 0 148px 0;
+    .contacts-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        @include standart-title;
+        padding-bottom: 48px;
+    }
+    h2{
+        @include standart-title;
+        padding-bottom: 48px;
+    }
+    p{
+        @include standart-style;
+        padding-bottom: 48px;
+    }
+    .contacts__list{
+        max-width: 505px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 48px 42px;
+        padding-bottom: 48px;
+        .contacts-item{
+        max-width: 273px;
+        }
+        h3{
+            @include standart-style;
+            font-size: 20px;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+        a{
+            @include standart-style;
+        }
+        address{
+            font-style: normal;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    input{
+        font-family: $Inter;
+        color: #0D2C54;
+        font-size: 16px;
+        letter-spacing: 1px;
+        background-color: transparent;
+        width: 610px;
+        padding: 23px 31px;
+        border: 1px solid #0D2C54;
+        outline:none;
+        &::placeholder {
+            color: #BABABA;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+    input[type=submit]{
+        font-weight: 500;
+        @include standart-style;
+        color: #FFFFFF;
+        background-color: #0D2C54;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+        @media(hover: hover){
+            &:hover{
+                transition: .2s ease-in-out;
+                color: $text-color;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}

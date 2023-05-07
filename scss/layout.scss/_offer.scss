@@ -1,0 +1,57 @@
+.offer{
+    background-color: #0D2C54;
+    padding: 148px 0 166px 0;
+    .offer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    h2{
+        @include standart-title;
+        color: #FFFFFF;
+    }
+    p{
+        @include standart-style;
+        color: #FFFFFF;
+        max-width: 509px;
+    }
+    .offer-text{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    input{
+        font-family: $Inter;
+        color: #FFFFFF;
+        font-size: 16px;
+        letter-spacing: 1px;
+        background-color: transparent;
+        width: 610px;
+        padding: 23px 31px;
+        border: 1px solid #FFFFFF;
+        outline:none;
+        &::placeholder {
+            color: #BABABA;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+    input[type=submit]{
+        font-weight: 500;
+        @include standart-style;
+        background-color: #FFFFFF;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+        @media(hover: hover){
+            &:hover{
+                transition: .2s ease-in-out;
+                color: #FFFFFF;
+                background-color: $text-color;
+            }
+        }
+    }
+}
