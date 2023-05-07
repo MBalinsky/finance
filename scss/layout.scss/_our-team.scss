@@ -1,26 +1,28 @@
 .our-team {
     position: relative;
     overflow: hidden;
-.our-team__content{
-    padding-top: 148px;
-}
 
-.patterns__top-left{
-    position: absolute;
-    top: -55px;
-    left: 0;
-}
+    .our-team__content {
+        padding-top: 148px;
+    }
 
-.patterns__top-right{
-    position: absolute;
-    top: -55px;
-    right: 0;
-}
-    .our-team__item + .our-team__item{
+    .patterns__top-left {
+        position: absolute;
+        top: -65px;
+        left: 0;
+    }
+
+    .patterns__top-right {
+        position: absolute;
+        top: -65px;
+        right: 0;
+    }
+
+    .our-team__item+.our-team__item {
         margin-left: 20px;
     }
 
-    .our-team__list{
+    .our-team__list {
         display: flex
     }
 
@@ -46,5 +48,28 @@
         @include standart-style;
         max-width: 210px;
         padding-top: 24px;
+    }
+
+    .our-team__item {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .eclipse-circle {
+        position: absolute;
+        bottom: 145px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #FF8C00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+
+        div {
+            color: white;
+        }
     }
 }

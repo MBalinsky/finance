@@ -1,0 +1,40 @@
+.our-offers{
+    position: relative;
+    padding-top: 148px;
+    padding-bottom: 148px;
+    .title{
+        padding-bottom: 96px;
+    }
+    h1{
+        @include standart-title;
+        padding-bottom: 48px;
+    }
+    p{
+        @include standart-style;
+        max-width: 550px;
+    }
+    .offers-container__cards{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;    
+    }
+    article{
+        max-width: 610px;
+        border: 1px solid $text-color;
+        padding: 85px;
+        h3{
+            @include standart-style;
+            font-size: 20px;
+            font-weight: 700;
+            padding-bottom: 48px;
+        }
+        p{
+            @include standart-style;
+            max-width: 440px;
+        }
+        &:nth-child(even){
+            border: none;
+            background-color: #F4F4F4;
+        }
+    }
+}

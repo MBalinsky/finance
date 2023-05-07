@@ -1,0 +1,32 @@
+.advantages{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 148px;
+    h2{
+        @include standart-title;
+        max-width: 1155px;
+        padding-bottom: 96px;
+    }
+    .advantages-list{
+        padding-bottom: 48px;
+    }
+    .patterns-bottom__left{
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+     }
+     .patterns-bottom__right{
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+     }
+     .swiper-arrows{
+        justify-content: center;
+        gap: 20px;
+     }
+     .gif-scroll{
+        position: absolute;
+        right: 195px;
+        top: 175px;
+     }
+}

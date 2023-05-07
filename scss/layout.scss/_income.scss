@@ -1,0 +1,30 @@
+.income{
+    position: relative;
+    overflow: hidden;
+    padding-top: 174px;
+    padding-bottom: 148px;
+    h2{
+        @include standart-title;
+        max-width: 676px;
+        padding-bottom: 48px;
+    }
+    p{
+        @include standart-style;
+    }
+    .title{
+        padding-bottom: 96px;
+    }
+    img{
+        cursor: pointer;
+    }
+    .patterns-bottom__left{
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+     }
+     .patterns-bottom__right{
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+     }
+}

@@ -1,0 +1,63 @@
+.swiper-arrows{
+    display: flex;
+    gap: 10px;
+}
+.swiper-arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: solid 1px #0D2C54;
+    transition: .2s ease-in-out;
+    @media (hover: hover){
+        &:hover{
+            transition: .2s ease-in-out;
+            background-color: #0D2C54;
+            border: solid 1px #FFFFFF;
+            svg{
+                fill: white;
+                transition: .2s ease-in-out;
+            }
+        }
+    }
+}
+.tourist-destination__list{
+    counter-reset: OurPluses;
+    display: flex;
+    gap: 20px;
+}
+.tourist-destination__item{
+    position: relative;
+    background-color: #F4F4F4;
+    width: 505px;
+    min-height: 310px;
+    flex-shrink: 0;
+    p{
+        @include standart-style;
+        line-height: 27px;
+        padding: 94px 38px 20px 38px;
+    }
+}
+.tourist-destination__item::before{
+    counter-increment: OurPluses;
+    content: counter(OurPluses, decimal-leading-zero);
+    font-family: $Inter;
+    display: inline-block;
+    font-size: 18px;
+    background-color: white;
+    width: 56px;
+    height: 30px;
+    border-radius: 20px;
+    color: $graph-elements;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 38px;
+    top: 40px;
+}

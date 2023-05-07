@@ -1,18 +1,19 @@
-.finance{
+.safety{
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    .finance__wrapper{
-        padding-top: 255px;
-        padding-bottom: 148px;
+    background-position: bottom;
+    height: auto;
+    width: auto;
+    .safety__wrapper{
+        padding-top: 160px;
+        padding-bottom: 340px;
     }
-    .finance__content{
+    .safety__content{
         background-color: #FFFFFF;
         display: block;
         max-width: 800px;
         padding: 85px;
-        h1{
+        h2{
             @include standart-title;
             font-size: 44px;
             font-weight: 700;
@@ -24,6 +25,5 @@
             text-align: left;
             @include standart-style;
         }
-    }
 }
-
+}

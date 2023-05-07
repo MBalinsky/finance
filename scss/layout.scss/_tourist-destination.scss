@@ -1,0 +1,30 @@
+.tourist-destination{
+    position: relative;
+    padding-bottom: 149px;
+    overflow: hidden;
+    .title{
+       display: flex;
+       align-items: center;
+       padding-bottom: 96px;
+       position: relative;
+       img{
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+       }
+}
+    h2{
+        @include standart-title;
+    }
+     .patterns-bottom__left{
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+     }
+     .patterns-bottom__right{
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+     }
+    }
+    

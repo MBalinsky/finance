@@ -1,0 +1,28 @@
+.investments{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    h2{
+        display: none;
+    }
+    .investments__wrapper{
+        display: flex;
+        justify-content: center;
+        padding-top: 148px;
+    }
+    .investments__content{
+            background-color: #FFFFFF;
+            display: block;
+            max-width: 1030px;
+            padding: 85px;
+            p{
+                display: block;
+                max-width: 840px;
+                text-align: left;
+                @include standart-style;
+            }
+            p + p {
+                padding-top: 48px;
+            }
+        }
+}
