@@ -1,20 +1,39 @@
 .tourist-destination{
     position: relative;
-    padding-bottom: 149px;
+    padding-bottom: calc(64px + (53) * (100vw - 360px) / (1280 - 360));
     overflow: hidden;
     .title{
        display: flex;
        align-items: center;
        padding-bottom: 96px;
        position: relative;
+       @media(max-width: 1280px){
+         padding-bottom: calc(35px + 50 * (100vw - 360px) / 920);
+       }
        img{
         position: absolute;
         bottom: 20px;
         right: 0;
        }
 }
+         .swiper-arrows{
+               @media(max-width: 550px){
+                  display: none;
+               }
+         }
+         .swiper-arrows__mobile-version{
+            display: none;
+            @media(max-width: 550px){
+               display: flex;
+               justify-content: space-between;
+               padding-top: 20px;
+            }
+         }
     h2{
         @include standart-title;
+        @media(max-width: 1280px){
+          font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 360px) / 1280);
+        }
     }
      .patterns-bottom__left{
         position: absolute;

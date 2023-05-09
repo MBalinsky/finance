@@ -1,13 +1,19 @@
 .our-offers{
     position: relative;
-    padding-top: 148px;
-    padding-bottom: 148px;
+    padding-top: calc(64px + (148 - 64) * ((100vw - 360px) / (1280 - 360)));
+    padding-bottom: calc(64px + (148 - 64) * (100vw - 360px) / (1280 - 360));
     .title{
-        padding-bottom: 96px;
+        padding-bottom: calc(48px + (96 - 48) * (100vw - 360px) / (1280 - 360));
     }
     h1{
         @include standart-title;
         padding-bottom: 48px;
+        @media(max-width: 1280px){
+            font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 360px) / 1280);
+        }
+        @media(max-width: 400px){
+            padding-bottom: 36px;
+        }
     }
     p{
         @include standart-style;
@@ -21,7 +27,7 @@
     article{
         max-width: 610px;
         border: 1px solid $text-color;
-        padding: 85px;
+        padding: calc(36px + (85 - 36) * (100vw - 360px) / (1280 - 360));;
         h3{
             @include standart-style;
             font-size: 20px;
