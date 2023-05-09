@@ -36,6 +36,12 @@
     width: 505px;
     min-height: 310px;
     flex-shrink: 0;
+    @media(max-width: 540px){
+        width: 330px;
+    }
+    @media(max-width: 355px){
+        width: 280px;
+    }
     p{
         @include standart-style;
         line-height: 27px;
@@ -61,3 +67,18 @@
     left: 38px;
     top: 40px;
 }
+.patterns-bottom__left{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    @media(max-width: 600px){
+        display: none;
+    }
+ }
+ .patterns-bottom__right{
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    @media(max-width: 600px){
+        display: none;
+    }}
