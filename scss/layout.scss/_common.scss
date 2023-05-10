@@ -68,6 +68,7 @@
     top: 40px;
 }
 .patterns-bottom__left{
+    max-width: 120px;
     position: absolute;
     bottom: -50px;
     left: 0;
@@ -76,9 +77,24 @@
     }
  }
  .patterns-bottom__right{
+    max-width: 120px;
     position: absolute;
     bottom: -70px;
     right: 0;
     @media(max-width: 600px){
         display: none;
     }}
+
+    .patterns__top-right{
+        max-width: 120px;
+        @media(max-width: 600px){
+            display: none;
+        }
+    }
+
+    .patterns__top-left{
+        max-width: 120px;
+        @media(max-width: 600px){
+            display: none;
+        }
+    }

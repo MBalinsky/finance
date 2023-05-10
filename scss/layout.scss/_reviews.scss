@@ -30,6 +30,9 @@
 }
 .scroll-slide{
     display: none;
+    @media(max-width: 775px){
+        top: 75px;
+    }
 }
 .reviews__slider {
     overflow: visible;

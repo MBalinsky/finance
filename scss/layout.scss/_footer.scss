@@ -14,6 +14,15 @@ footer {
             display: none;
         }
     }
+    address {
+        @include standart-style;
+        padding-top: 24px;
+        @media(max-width: 850px){
+            padding-top: 48px;
+            padding-bottom: 36px;
+            max-width: 287px;
+        }
+    }
     }
     .footer__logo-copyright {
         display: flex;
@@ -65,16 +74,6 @@ footer {
         margin-left: 12px;
         @include standart-style;
         font-weight: 500;
-    }
-
-    address {
-        @include standart-style;
-        padding-top: 24px;
-        @media(max-width: 850px){
-            padding-top: 48px;
-            padding-bottom: 36px;
-            max-width: 287px;
-        }
     }
 
     .footer-mobile{

@@ -9,8 +9,16 @@ if(burger){
     })
 }
 
+const url = window.location.href;
+const footerTitle = document.querySelector('.footer-mobile h3');
+const footerContactsList = document.querySelector('.footer__contacts-list-mobile');
+const footerIframe = document.querySelector('.footer-mobile iframe');
 
-
+if(url.indexOf('contacts') != -1){
+    footerTitle.remove();
+    footerContactsList.remove();
+    footerIframe.remove();
+}
 
 
 

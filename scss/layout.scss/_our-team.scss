@@ -34,7 +34,6 @@
 
     .person-photo {
         width: 295px;
-        height: 274px;
     }
 
     h3 {
@@ -44,7 +43,7 @@
         padding-top: 24px;
     }
 
-    span {
+    p {
         display: block;
         @include standart-style;
         max-width: 210px;
@@ -68,7 +67,6 @@
         justify-content: center;
         align-items: center;
         font-size: 10px;
-
         div {
             color: white;
         }
@@ -88,15 +86,7 @@
         .our-team__list{
             gap: 48px;
         }
-        .person-photo {
-            width: 330px;
-            height: 306px
-        }
-        .eclipse-circle{
-            bottom: auto;
-            top: 265px;
-        }
-        span {
+        p {
             padding-top: calc(20px + (24 - 20) * ((100vw - 360px) / (1280 - 360)));
         }
     }
@@ -107,13 +97,6 @@
         .container{
             padding: 0px 15px;
         }
-    }
-    .patterns__top-left {
-        display: none;
-    }
-
-    .patterns__top-right {
-        display: none;
     }
 }
 
