@@ -1,6 +1,25 @@
 .our-team {
     position: relative;
     overflow: hidden;
+    .cards-container{
+        position: relative;
+        .eclipse-circle {
+            position: absolute;
+            bottom: 12px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #FF8C00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            div {
+                color: white;
+            }
+        }
+    }
     .our-team__content {
         padding-top: 148px;
     }
@@ -34,7 +53,6 @@
 
     .person-photo {
         width: 295px;
-        height: 274px;
     }
 
     h3 {
@@ -44,11 +62,14 @@
         padding-top: 24px;
     }
 
-    span {
+    p {
         display: block;
         @include standart-style;
         max-width: 210px;
         padding-top: 24px;
+        @media(max-width: 668px){
+            max-width: fit-content;
+        }
     }
 
     .our-team__item {
@@ -56,26 +77,7 @@
         cursor: pointer;
     }
 
-    .eclipse-circle {
-        position: absolute;
-        bottom: 145px;
-        right: 10px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #FF8C00;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-
-        div {
-            color: white;
-        }
-    }
 }
-
-
 @media(max-width: 1280px){
     .our-team{
         .our-team__content {
@@ -88,15 +90,7 @@
         .our-team__list{
             gap: 48px;
         }
-        .person-photo {
-            width: 330px;
-            height: 306px
-        }
-        .eclipse-circle{
-            bottom: auto;
-            top: 265px;
-        }
-        span {
+        p {
             padding-top: calc(20px + (24 - 20) * ((100vw - 360px) / (1280 - 360)));
         }
     }
@@ -107,13 +101,6 @@
         .container{
             padding: 0px 15px;
         }
-    }
-    .patterns__top-left {
-        display: none;
-    }
-
-    .patterns__top-right {
-        display: none;
     }
 }
 

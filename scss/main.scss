@@ -10,16 +10,6 @@
 }
 
 @font-face {
-    font-family: 'Helvetica';
-    src: url('../fonts/ag-helvetica.woff2') format('woff2'),
-        url('../fonts/ag-helvetica.woff') format('woff'),
-        url('../fonts/ag-helvetica.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter-Italic.woff2') format('woff2'),
         url('../fonts/Inter-Italic.woff') format('woff'),
@@ -74,3 +64,4 @@
 @import '../scss/layout.scss/investments';
 @import '../scss/layout.scss/income';
 @import '../scss/layout.scss/contacts';
+@import '../scss/layout.scss/modal'

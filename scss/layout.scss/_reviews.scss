@@ -16,12 +16,18 @@
         position: absolute;
         bottom: -73px;
         left: 0;
+        @media(max-width: 800px){
+            display: none;
+        }
     }
 
     .patterns__bottom-right {
         position: absolute;
         bottom: -73px;
         right: 0;
+        @media(max-width: 800px){
+            display: none;
+        }
     }
 }
 
@@ -30,6 +36,9 @@
 }
 .scroll-slide{
     display: none;
+    @media(max-width: 775px){
+        top: 75px;
+    }
 }
 .reviews__slider {
     overflow: visible;
@@ -191,19 +200,13 @@
     .reviews{
         position: relative;
     }
-    .patterns__bottom-left {
-        display: none;
-    }
-    .patterns__bottom-right {
-        display: none;
-    }
     .reviews__content{
         margin-bottom: calc(48px + (96 - 48) * ((100vw - 320px) / (999 - 320)));
     }
     .scroll-slide{
         display: block;
         position: absolute;
-        top: calc(98px + (105 - 98) * ((100vw - 320px) / (999 - 320)));
+        top: calc(75px + (105 - 75) * ((100vw - 320px) / (999 - 320)));
         right: calc(10px + (300 - 10) * ((100vw - 320px) / (999 - 320)));
         width: 40px;
         height: 24px;

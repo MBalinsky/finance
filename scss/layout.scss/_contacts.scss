@@ -1,113 +1,155 @@
-.contacts{
-        padding-top: calc(64px + (152 - 64) * ((100vw - 360px) / (1280 - 360)));
-        padding-bottom: calc(64px + (148 - 64) * (100vw - 360px) / (1280 - 360));
-        .contacts-container{
+.contacts {
+    padding-top: calc(64px + (152 - 64) * ((100vw - 360px) / (1280 - 360)));
+    padding-bottom: calc(64px + (148 - 64) * (100vw - 360px) / (1280 - 360));
+    .contacts-mobile {
+        display: none;
+
+        @media(max-width: 1160px) {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
-        .contacts-mobile{
-            display: none;
-            @media(max-width: 1160px){
-                display: block;
+
+        h2 {
+            padding-bottom: 48px;
+            @media(max-width: 420px){
+                margin-right: auto;
             }
-            h2{
-                padding-bottom: 0;
-            }
-            span{
-                @include standart-style;
-            }
-            .contacts-list-mobile{
-                padding-bottom: 48px;
-            }
-            iframe{
-                width: 330px;
-                height: 250px;
-                padding-bottom: 64px;
-             @media (max-width: 390px) {
+        }
+
+        span {
+            @include standart-style;
+        }
+
+        .contacts-list-mobile {
+            padding-bottom: 48px;
+        }
+
+        iframe {
+            width: 330px;
+            height: 250px;
+            padding-bottom: 64px;
+
+            @media (max-width: 390px) {
                 width: 300px;
                 height: 220px;
-             }
-            }
-            address{
-                padding-bottom: 36px;
             }
         }
-    .contacts-content{
+
+        address {
+            padding-bottom: 36px;
+            font-family: $Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #0D2C54;
+        }
+    }
+
+    .contacts-content {
         display: flex;
         justify-content: space-between;
+
+        @media(max-width: 1160px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
-    .contacts-container-computer{
-        @media(max-width: 1160px){
+
+    .contacts-container-computer {
+        padding-right: 30px;
+        @media(max-width: 1160px) {
             display: none;
         }
     }
-    h1{
-        @include standart-title;
-        padding-bottom: 48px;
-    }
-    h2{
+
+    h1 {
         @include standart-title;
         padding-bottom: 48px;
         font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 360px) / 1280);
         padding-bottom: calc(36px + (48 - 36) * (100vw - 360px) / (1280 - 360));
+        
     }
-    p{
+
+    h2 {
+        @include standart-title;
+        padding-bottom: 48px;
+        font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 360px) / 1280);
+        padding-bottom: calc(36px + (48 - 36) * (100vw - 360px) / (1280 - 360));
+        @media(max-width: 1160px) {
+            text-align: center;
+        }
+    }
+
+    p {
         @include standart-style;
         padding-bottom: 48px;
     }
-    .contacts__list{
+
+    .contacts__list {
         max-width: 505px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 48px 42px;
         padding-bottom: 48px;
-        .contacts-item{
-        max-width: 273px;
+
+        .contacts-item {
+            max-width: 273px;
         }
-        h3{
+
+        h3 {
             @include standart-style;
             font-size: 20px;
             font-weight: 700;
             padding-bottom: 20px;
         }
-        a{
+
+        a {
             @include standart-style;
         }
-        address{
+
+        address {
             font-style: normal;
         }
     }
-    form{
+
+    form {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 12px;
     }
-    input{
+
+    input {
         font-family: $Inter;
         color: #0D2C54;
         font-size: 16px;
         letter-spacing: 1px;
         background-color: transparent;
-        width: calc(300px + (610 - 310) * ((100vw - 320px) / (1280 - 320)));
+        width: calc(310px + 300 * (100vw - 320px) / 960);
         padding: 23px 31px;
         border: 1px solid #0D2C54;
-        outline:none;
+        outline: none;
+
         &::placeholder {
             color: #BABABA;
             font-size: 16px;
             letter-spacing: 1px;
         }
     }
-    input[type=submit]{
+
+    input[type=submit] {
         font-weight: 500;
         @include standart-style;
         color: #FFFFFF;
         background-color: #0D2C54;
         transition: .2s ease-in-out;
         cursor: pointer;
-        @media(hover: hover){
-            &:hover{
+
+        @media(hover: hover) {
+            &:hover {
                 transition: .2s ease-in-out;
                 color: $text-color;
                 background-color: #FFFFFF;
@@ -115,4 +157,3 @@
         }
     }
 }
-
