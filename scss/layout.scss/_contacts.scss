@@ -58,6 +58,7 @@
     }
 
     .contacts-container-computer {
+        padding-right: 30px;
         @media(max-width: 1160px) {
             display: none;
         }
