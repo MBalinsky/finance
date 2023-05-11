@@ -21,7 +21,7 @@ const url = window.location.href;
 const footerTitle = document.querySelector('.footer-mobile h3');
 const footerContactsList = document.querySelector('.footer__contacts-list-mobile');
 const footerIframe = document.querySelector('.footer-mobile iframe');
-const titleH1 = document.querySelector('h1').getAttribute('contacts');
+const titleH1 = document.getElementById("contacts");
 
 if (url.indexOf('contacts') != -1) {
     footerTitle.remove();
